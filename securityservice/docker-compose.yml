@@ -1,0 +1,9 @@
+version: "4.28"
+
+services:
+  app:
+    build: .
+    restart: on-failure
+    container_name: security-service
+    ports:
+      - 9090:9090
